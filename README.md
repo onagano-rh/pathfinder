@@ -11,6 +11,10 @@ Run MongoDB by Docker.
     ./run-local-mongo.sh
     # Or `docker start mongodb` for 2nd and later times.
 
+Use Java 8, not 11.
+
+    export JAVA_HOME=/usr/lib/jvm/java-1.8.0
+
 Run the backend server.
 
     cd pathfinder-server
