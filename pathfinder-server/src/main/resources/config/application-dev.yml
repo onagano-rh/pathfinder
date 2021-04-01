@@ -100,11 +100,10 @@ application:
 #dbhostport: 9191
 
 #pathfinder-local
-database-user:
-database-password:
+database-user: testuser
+database-password: password
 dbhostport: 27017
 
 database-name: pathfinder
 database-admin-password:
 dbhostname: 127.0.0.1
-dbhostport: 38017

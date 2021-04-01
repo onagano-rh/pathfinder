@@ -4,6 +4,24 @@ A workload assessment tool used to determine an applications suitability for run
 
 [![Build Status](https://travis-ci.org/redhat-cop/pathfinder.svg?branch=master)](https://travis-ci.org/redhat-cop/pathfinder) [![Docker Repository on Quay](https://quay.io/repository/pathfinder/pathfinder-server/status "Docker Repository on Quay")](https://quay.io/repository/pathfinder/pathfinder-server)
 
+# Setup environment locally
+
+Run MongoDB by Docker.
+
+    ./run-local-mongo.sh
+    # Or `docker start mongodb` for 2nd and later times.
+
+Run the backend server.
+
+    cd pathfinder-server
+    ./run-local.sh
+
+Run the frontend server.
+
+    cd pathfinder-ui
+    ./run-local.sh
+
+Then open http://localhost:8083/ in your browse and login with "admin/admin".
 
 # Setup environment on OpenShift (incl. minishift)
 
